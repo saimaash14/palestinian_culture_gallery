@@ -1,0 +1,113 @@
+body{
+  background-color: #9fc49f;
+  margin: 0; 
+  padding: 0; 
+  height: 100%; 
+  overflow: hidden; 
+}
+
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f5c4c4;
+  text-shadow: 2px 2px #873e3e; 
+}
+
+
+.karla {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.birthstone-regular {
+  font-family: "Birthstone", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+.watermelon{
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.watermelonflipped{
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.gallery {
+  display: grid; 
+  grid-auto-flow: column; 
+  grid-gap: 20px; 
+  padding: 20px;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px; 
+  border: 7px solid #e39696;
+  border-radius: 30px;
+  position: relative; 
+}
+
+.gallery-item img {
+  width: 100%; 
+  height: 100%; 
+  border-radius: 30px;
+  object-fit: cover; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  transition: transform 0.6s ease;
+}
+
+.olivetree {
+  width: 350px; 
+  height: 450px; 
+}
+
+
+.gallery-item a {
+  display: block; 
+  margin-top: -75px; 
+  text-decoration: none; 
+  font-size: 25px; 
+  color: #ab4343; 
+}
+
+.gallery-item a:hover {
+  text-decoration: underline; 
+  color:#f5c4c4 ; 
+  transform: scale(1.2)
+}
+
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensures the canvas spans the full width */
+  height: 100%; /* Ensures the canvas spans the full height */
+  z-index: 0; /* Places the canvas behind all other elements */
+  pointer-events: none; /* Prevents the sketch from blocking interactions with other content */
+}

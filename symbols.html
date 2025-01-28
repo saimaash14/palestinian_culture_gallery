@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="symbols.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back_ios" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+</head>
+<body>
+<a href="finalproject.html" class="icon-button">
+  <span class="material-symbols-outlined">arrow_back_ios</span>
+</a>
+<div class="title birthstone-regular"> symbols </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="gallery birthstone-regular">
+	<div class="gallery-item" id="olivetree">
+		<img class="olivetreepopup" src="images/olivetreesymbol.jpeg" onclick="openPopup('olivetreepopup')">
+		<p class="label">olive tree</p>
+	</div>
+
+	<div class="popup" id="olivetreepopup">
+		<h2 class="info karlaskinny">
+			<b class="header">olive tree</b>
+			<br>
+			<br>
+			- the olive tree symbolizes <b class="moving">peaceful resistance</b><br>
+			- average lifespan of an olive tree is<br>
+			<b>300-600</b> years; represents Palestinian <br>
+			rootedness in their land<br>
+			- <b class="neon">resilience & endurance</b><br>
+		</h2>
+		<button type="button" onclick="closePopup('olivetreepopup')">close</button>
+	</div>
+
+	<div class="gallery-item" id="keyofreturn">
+		<img class="keyofreturnpopup" src="images/keyofreturnsymbol.jpeg" onclick="openPopup('keypopup')">
+		<p class="label">key of return</p>
+	</div>
+
+	<div class="popup" id="keypopup">
+		<h2 class="info karlaskinny">
+			<b class="header">key of return</b>
+			<br>
+			<br>
+			- represents the <b class="moving">"right to return"</b> <br>
+			- many Palestinians kept the keys to their<br>
+			homes when they were <b class="shaking">displaced from their homes</b> in Nakba<br>
+			- the keys are passed down generations as <br>
+			a reminder of their old homes and symbolizes <br>
+			their <b class= "neon">right to return</b><br>
+		</h2>
+		<button type="button" onclick="closePopup('keypopup')">close</button>
+	</div>
+
+	<div class="gallery-item" id="watermelon">
+		<img class="watermelonpopup" src="images/watermelonsymbol.jpeg" onclick="openPopup('watermelonpopup')">
+		<p class="label">watermelon</p>
+	</div>
+
+	<div class="popup" id="watermelonpopup">
+		<h2 class="info karlaskinny">
+			<b class="header">watermelon</b>
+			<br>
+			<br>
+			- after the 6-day war in 1967, the Israeli <br>
+			government <b>banned displays of the Palestinian flag</b><br>
+			- Palestinians began using the watermelon <br>
+			as it represents the flag colors, however <br>
+			those colors were banned from being used as well<br>
+			- the ban was lifted in 1993<br>
+			- now used to avoid censorship and <br>
+			shadowbanning on social media<br>
+			- <b class="neon">symbolizes Palestinian solidarity</b><br>
+		</h2>
+		<button type="button" onclick="closePopup('watermelonpopup')">close</button>
+	</div>
+</div>
+
+
+
+<script>
+function openPopup(popupId) {
+    // Get the specific popup by its ID and add the "open-popup" class
+    const popup = document.getElementById(popupId);
+    popup.classList.add("open-popup");
+}
+
+function closePopup(popupId) {
+    // Get the specific popup by its ID and remove the "open-popup" class
+    const popup = document.getElementById(popupId);
+    popup.classList.remove("open-popup");
+}
+
+</script>
+<script src="fallingwatermelons.js"></script>
+</body>
+</html>
